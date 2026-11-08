@@ -1,30 +1,27 @@
 # Hi, I'm Yuxuan Xu
 
-EE freshman at WashU (McKelvey School of Engineering) interested in hardware design and ML systems.
+I'm studying electrical engineering at Washington University in St. Louis and expect to graduate in 2029. I work on FPGA design and verification, circuit boards, and hardware test.
 
-## About Me
+## FPGA projects
 
-- B.S. Electrical Engineering, Washington University in St. Louis (Class of 2029)
-- Undergraduate Research Assistant at KongLab — physics-informed diffusion models for cardiovascular fluid simulation
-- Hardware enthusiast: FPGA, SystemVerilog, PCB design
-- St. Louis, MO
+### [FPGA Spectral Doppler Engine](https://github.com/yu-xuan-xu/fpga-spectral-doppler-engine)
 
-## Tech Stack
+My cardiac flow research got me curious about how Doppler estimates are made in hardware. I used a shared FFT to fit a fixed point SystemVerilog design on the iCE40UP5K. The demo checks signed velocity estimates against a Python model. The AXI design adds atomic result snapshots, soft reset, and a sticky interrupt.
 
-**Hardware & EDA:** SystemVerilog · KiCad · FPGA (iCE40) · Yosys/nextpnr · RISC-V Assembly · Arduino
+[Architecture](https://github.com/yu-xuan-xu/fpga-spectral-doppler-engine/blob/main/docs/doppler_data_path.svg) · [Run the simulation](https://github.com/yu-xuan-xu/fpga-spectral-doppler-engine#see-it-run)
 
-**Programming:** Python · C/C++ · MATLAB · Java
+### [FPGA Rhythm Sequencer](https://github.com/yu-xuan-xu/fpga-rhythm-sequencer)
 
-**ML & Scientific Computing:** PyTorch · NumPy · pandas · Diffusion Models · HPC batch computing
+I started this in my digital logic course because I wanted to edit a rhythm from buttons and see it on a display. The v2 RTL uses one clock and counts a press only after stable TM1638 scans. The hardware video shows the course prototype, and the v2 animation shows a bar played in simulation.
 
-**Tools:** Git · Linux/Bash · LaTeX · Docker
+[Course prototype video](https://github.com/yu-xuan-xu/fpga-rhythm-sequencer/blob/main/demo/rhythm_hardware_demo.mp4) · [v2 simulation animation](https://github.com/yu-xuan-xu/fpga-rhythm-sequencer/blob/main/demo/rhythm_demo.gif)
 
-## Current Projects
+## Work and research
 
-- [FPGA Rhythm Sequencer](https://github.com/yu-xuan-xu/fpga-rhythm-sequencer) — programmable rhythm sequencer in SystemVerilog on iCE40 FPGA
-- CardioCoNFiLD — physics-informed diffusion model pipeline for 3D left ventricular blood flow reconstruction (KongLab, WashU)
-- FPGA Hardware Acceleration for CardioCoNFiLD — implementing key inference modules (Doppler projection, continuity loss, etc.) on FPGA
+* At Sino Telecom I wrote a reusable SystemVerilog SPI master model and used it to verify register access through a CPLD path to MDIO.
+* On the WashU Robotics Drone Team I work on power distribution and designed the v0.3 flight controller PCB in KiCad.
+* I develop Python and SCPI tests for CompactDAQ and built a differentiable Doppler operator for cardiac flow reconstruction research.
 
 ## Contact
 
-xyuxuan@wustl.edu · [LinkedIn](https://linkedin.com/in/xuyuxuan)
+[LinkedIn](https://www.linkedin.com/in/xuyuxuan/) · [xyuxuan@wustl.edu](mailto:xyuxuan@wustl.edu)
