@@ -32,7 +32,8 @@ I started this in my digital logic course because I wanted to edit a rhythm from
 
 * At Sino Telecom I wrote a reusable SystemVerilog SPI master model and used it to verify register access through a CPLD path to MDIO.
 * On the WashU Robotics Drone Team I work on power distribution and designed the v0.3 flight controller PCB in KiCad.
-* I develop Python and SCPI tests for CompactDAQ and built a differentiable Doppler operator for cardiac flow reconstruction research.
+* I develop Python and SCPI tests for CompactDAQ.
+* For our cardiac flow reconstruction research, I built a differentiable Doppler operator in PyTorch that models what an ultrasound probe would measure from a 3D blood flow field. I evaluated it across different probe orientations.
 
 ## Contact
 
